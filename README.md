@@ -1,6 +1,6 @@
 # AI Agent-Autonomous
 
-Turn a plain-language request into a structured plan and a polished Word document. The agent plans its own tasks, executes independent work in parallel, records its decisions, and returns a downloadable `.docx` file with an execution trace.
+Turn a plain-language request into a structured plan and a polished Word document. The RAG based Ai agent plans its own tasks, executes independent work in parallel, records its decisions, and returns a downloadable `.docx` file with an execution trace.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+" />
