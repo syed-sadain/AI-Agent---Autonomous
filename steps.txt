@@ -1,0 +1,56 @@
+1. App server start karein — Terminal 1
+
+uvicorn app.main:app 
+
+2. API docs — Terminal 2
+python scripts\demo.py http://127.0.0.1:8000
+
+3.“First, I’m showing the standard request:
+ create a mobile app launch plan for a local bakery,
+  with a 12-week timeline and a five-person team. 
+  The agent creates its own task list and runs the tasks
+   according to their dependencies. The wave number shows
+    which tasks can run in parallel.”
+  
+CODE Start-Process .\demo_output\standard.docx
+
+4.“Now I’ll show a more ambiguous request about moving customer
+ support to AI. It mentions a small budget, enterprise-grade quality,
+  a launch next month, and uncertainty about whether to build or buy.
+The agent records its assumptions and how it resolved those conflicts.”
+
+CODE: Start-Process .\demo_output\complex.docx
+
+5 Describe one issue faced, the root cause, and how you resolved it.
+Ans: One issue we faced was slow document generation when Ollama was not running. 
+The root cause was that connection-refused errors were treated as temporary, so the
+ agent retried the unavailable provider and waited before moving on to a fallback.
+
+ We resolved it by treating connection failures as permanent for that 
+provider—there’s no point retrying immediately if the server is unreachable.
+The resilient LLM layer then moves to the next configured provider, and
+its circuit breaker can skip a repeatedly failing provider for a cooldown period.
+ This reduces wasted waiting and lets the document-generation workflow continue using
+  another provider or the mock fallback.
+
+6Q Explain one engineering tradeoff such as Simplicity vs Extensibility,
+ Autonomous Planning vs Deterministic Workflows, 
+ Speed vs Functionality, Accuracy vs Development Time, 
+ or Single-agent vs Multi-agent architecture.
+
+ANS: This project lets an LLM create its own task plan from each user request instead
+ of following one fixed, predefined workflow. That makes it more flexible: it can adapt 
+ the document structure to different topics and handle vague or conflicting requests by
+  recording assumptions and ambiguities.
+
+The tradeoff is predictability. LLM-generated plans can vary between runs or contain invalid tools
+ and dependencies. The project addresses this by validating and normalizing each plan before execution, 
+ limiting its size, repairing dependencies, and using a deterministic fallback plan if planning fails.
+
+In short, autonomous planning improves adaptability, while validation and fallback logic help keep execution
+ reliable.
+
+8-
+go  http://127.0.0.1:8000/docs/
+
+"request": "Create a staff onboarding guide for a small coffee shop. Include a first-week training schedule, customer-service standards, food-safety responsibilities, and a checklist for the new employee."

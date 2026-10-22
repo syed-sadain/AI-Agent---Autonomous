@@ -1,0 +1,83 @@
+[
+  {
+    "id": "kb-support-ai",
+    "title": "Customer support automation (illustrative benchmarks)",
+    "keywords": ["customer", "support", "helpdesk", "chatbot", "ticket", "ai", "automation", "service", "assistant"],
+    "facts": [
+      "Illustrative benchmark: AI assistants typically deflect 20-40% of tier-1 tickets within six months of launch.",
+      "Illustrative benchmark: a human-handled ticket costs roughly USD 5-15, versus USD 0.5-2 for an automated resolution.",
+      "Buying a SaaS support-AI platform usually reaches production in 4-8 weeks; a custom build typically takes 4-6 months.",
+      "Human escalation paths and a feedback loop are the strongest predictors of customer satisfaction in AI-assisted support."
+    ]
+  },
+  {
+    "id": "kb-cloud-migration",
+    "title": "Cloud migration (illustrative benchmarks)",
+    "keywords": ["cloud", "migration", "aws", "azure", "gcp", "infrastructure", "servers", "hosting", "devops"],
+    "facts": [
+      "Illustrative benchmark: lift-and-shift migrations commonly cut data-centre cost 15-30% but rarely deliver agility gains on their own.",
+      "Typical phases: assessment, landing zone, pilot workload, wave migrations, decommissioning.",
+      "Untracked egress, idle resources and over-provisioning are the top three causes of cloud cost overruns."
+    ]
+  },
+  {
+    "id": "kb-mobile-app",
+    "title": "Mobile and web app delivery (illustrative benchmarks)",
+    "keywords": ["mobile", "app", "ios", "android", "web", "website", "launch", "product", "startup", "mvp"],
+    "facts": [
+      "Illustrative benchmark: a focused MVP typically takes 8-14 weeks with a team of 3-5 people.",
+      "Roughly 20-30% of project effort goes to testing, release management and app-store compliance.",
+      "Scope creep is the most common reason MVP timelines slip; a written must-have / nice-to-have list mitigates it."
+    ]
+  },
+  {
+    "id": "kb-marketing",
+    "title": "Marketing campaigns (illustrative benchmarks)",
+    "keywords": ["marketing", "campaign", "brand", "social", "ads", "seo", "content", "growth", "leads"],
+    "facts": [
+      "Illustrative benchmark: B2B email campaigns average a 2-5% click-through rate; paid social often lands at 0.5-1.5%.",
+      "A common budget split: 50-60% paid media, 20-25% content production, 10-15% tooling and analytics, 10% reserve.",
+      "Define one primary KPI per campaign (e.g. qualified leads) to avoid vanity-metric reporting."
+    ]
+  },
+  {
+    "id": "kb-hr-onboarding",
+    "title": "HR and employee onboarding (illustrative benchmarks)",
+    "keywords": ["hr", "onboarding", "employee", "hiring", "recruitment", "training", "staff", "people", "induction"],
+    "facts": [
+      "Illustrative benchmark: structured onboarding improves first-year retention by roughly 20-80% depending on the study.",
+      "Best practice is a 30-60-90 day plan with a named buddy and a Day-1 checklist (access, equipment, introductions).",
+      "Completion tracking through an HRIS reduces missed compliance training."
+    ]
+  },
+  {
+    "id": "kb-security",
+    "title": "Cybersecurity and compliance (illustrative benchmarks)",
+    "keywords": ["security", "cyber", "compliance", "audit", "privacy", "gdpr", "iso", "risk", "policy", "data"],
+    "facts": [
+      "Illustrative benchmark: ISO 27001 readiness for a small organisation commonly takes 4-9 months.",
+      "MFA, patching cadence and tested backups prevent the majority of common incidents.",
+      "Third-party and vendor access is a leading and frequently overlooked attack path."
+    ]
+  },
+  {
+    "id": "kb-data-analytics",
+    "title": "Data and analytics programs (illustrative benchmarks)",
+    "keywords": ["data", "analytics", "dashboard", "bi", "reporting", "warehouse", "pipeline", "ml", "machine", "learning", "model"],
+    "facts": [
+      "Illustrative benchmark: 60-80% of analytics project time is spent on data preparation and quality work.",
+      "Start with 3-5 decision-critical metrics rather than a broad dashboard rollout.",
+      "Data-ownership and refresh-frequency agreements prevent dashboard trust problems."
+    ]
+  },
+  {
+    "id": "kb-process-sop",
+    "title": "Process documentation and SOPs (illustrative benchmarks)",
+    "keywords": ["sop", "procedure", "process", "workflow", "standard", "operating", "checklist", "operations", "quality"],
+    "facts": [
+      "A good SOP states purpose, scope, roles, step-by-step procedure, exceptions and a review cycle.",
+      "SOPs reviewed at least annually have markedly fewer drift-related incidents.",
+      "Each step should have one accountable role and one observable completion signal."
+    ]
+  }
+]
