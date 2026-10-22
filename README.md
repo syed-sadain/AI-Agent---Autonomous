@@ -1,4 +1,4 @@
-# Autonomous AI Document Agent
+# AI Agent-Autonomous
 
 Turn a plain-language request into a structured plan and a polished Word document. The agent plans its own tasks, executes independent work in parallel, records its decisions, and returns a downloadable `.docx` file with an execution trace.
 
